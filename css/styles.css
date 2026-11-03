@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9bc2f3;
+  color: #ebe1e1;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #262d35;
+  margin-bottom: 5px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.seccion-busqueda {
+  background-color: #1c2430;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#formulario-busqueda {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input[type="date"], button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  font-size: 14px;
+}
+
+button {
+  background-color: #c6f300;
+  color: rgb(19, 18, 18);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0051b3;
+}
+
+#mensaje-estado {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff6b6b;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seccion-apod, .seccion-favoritos {
+  background-color: #1c2430;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#apod-titulo {
+  margin-bottom: 5px;
+}
+
+#apod-fecha {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+#apod-imagen {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+#enlace-video {
+  color: #4da3ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#enlace-video:hover {
+  text-decoration: underline;
+}
+
+#btn-favorito {
+  background-color: #e3a008;
+  margin-bottom: 15px;
+}
+
+#btn-favorito:hover {
+  background-color: #c28800;
+}
+
+#apod-explicacion {
+  line-height: 1.5;
+  color: #ddd;
+}
+
+#apod-explicacion p {
+  margin-bottom: 10px;
+}
+
+.seccion-favoritos h3 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#lista-favoritos {
+  list-style: none;
+}
+
+#lista-favoritos li {
+  background-color: #121820;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+#lista-favoritos li:hover {
+  border-color: #4da3ff;
+}
+
+#lista-favoritos strong {
+  display: block;
+  color: #4da3ff;
+  font-size: 14px;
+}
+
+#lista-favoritos span {
+  font-size: 12px;
+  color: #888;
+}
